@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  width: 200vh;
+  margin:auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  background-color: #F3F5FC;
+  width: 90%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: #0A3871;
+}
+
+
+header{  
+  background-color: rgb(127, 255, 249);
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.contat{
+  display:flex;
+}
+
+.social-links{
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 12px;
+  width: 30px;
+  display: flex;
+}
+.socia-links, img{
+  width: 85%;
+  margin-left: 2.5px;
+  text-align: center;
+  display: flex;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h2{
+  margin: 15px 0;
+}
+
+p{
+  margin-top: 10px;
+}
+
+.conteiner-encrypt-text{
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.encrypt-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+  display: flex;
+  margin-top: 40px; 
+}
+.encrypt, .decrypt{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  border-color: #0A3871;
+  font-size: large;
+  font-weight: 600;
+  width: 300px;
+  height: 60px; 
+  border-radius: 140px; 
+  color: #0A3871;
+}
+.conteiner-decrypt-text{
+  background-image: url('../img/Capturar2.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  margin: 50PX;
+  /* opacity: 0.4; */
+}
+
+.decrypt-text{
+  background-color: transparent;
+  color: #0A3871;
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  box-shadow: none;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+
+.copy{
+  display:flex;
+  align-items:center;
+  border-radius: 140px;
+  border-color: #0A3871;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 600;
+  width: 250px;
+  height: 55px;
+  margin-top: 50px;
+  color: #0A3871;
+}
+footer{
+  display: flex;
+  justify-content: center; 
+  padding: .5%; 
+}
