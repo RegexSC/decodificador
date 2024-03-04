@@ -6,61 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Encriptor</title>
 </head>
 
 <body>
+    <header>
+        <img src="./img/kisspng-combination-lock-padlock-clip-art-a-man-who-was-robbed-and-escaped-5ade290889b0c5.532730671524508936564.png"
+            style="width: 6%;" alt="">
+
+        <h1>Encriptor</h1>
+
+        <img style="width: 10%; border-radius: 1em; margin-right: 1em;" src="./img/Capturar.PNG" alt="logo one">
+
+    </header>
     <main>
-        <header>
-            <img src="./img/kisspng-combination-lock-padlock-clip-art-a-man-who-was-robbed-and-escaped-5ade290889b0c5.532730671524508936564.png"
-                style="width: 5%;" alt="">
-            <h1>Encriptor</h1>
 
-            <div class="contat">
-                <div class="social-links">
-                    <a href="https://wa.me/message/FQYEFCIHZ2A5N1"><img src="./img/whatsapp.svg" alt="logo whatsapp"></a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/reginaldo.soares.5815"><img src="./img/facebook.svg"
-                        alt="logo face"></a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/RegexSC"><img src="./img/github.svg" alt="logo github"></a>
-                </div>
-            </div>            
+        <section class="conteiner-encrypt-text">
 
-        </header>
-        <div class="container">
-            <section class="conteiner-encrypt-text">
-                <h2 id="encrypt">Criptografe seu texto</h2>
-                <div>
-                    <textarea class="encrypt-text" id="encrypt-text" cols="30" rows="10" placeholder="Digite aqui o seu texo"></textarea>
-                    <p class="encrypt-text">Use apenas texto, não caraceres especias.</p>
-                </div>
-                <div class="buttons">
-                    <button onclick="btEncryptext()" class="encrypt">Criptografar</button>
-                    <button onclick="btDecryptext()" class="decrypt">Descriptografar</button>
-                </div>
-            </section>
+            <div>
+                <textarea class="encrypt-text" id="encrypt-text" cols="30" rows="10"
+                    placeholder="Digite aqui o seu texo"></textarea>
+                <p class="encrypt-text">Use apenas texto, não caraceres especias.</p>
+            </div>
+            <div class="buttons">
+                <button onclick="btEncryptext()" class="encrypt">Criptografar</button>
+                <button onclick="btDecryptext()" class="decrypt">Descriptografar</button>
+            </div>
+        </section>
 
-            <section class="conteiner-decrypt-text">
-                <h2 id="decrypt">Descriptografe seu texto</h2>
-                <div>
-                    <textarea class="decrypt-text" id="decrypt-text" cols="30" rows="10" placeholder="Digite aqui o seu texo"></textarea>
-                    
-                </div>
-                <div >
-                    <button class="copy" id="copy" onclick="btCopy()">Copiar</button>
-                </div>
-            </section>
-        </div>
+        <section class="conteiner-decrypt-text">
+            <div>
+                <textarea class="decrypt-text" id="decrypt-text" cols="30" rows="10" style="font-size: larger;"></textarea>
+            </div>
 
-        <footer>
-           <p>&copy 2024 Challenge ONE Decodificador</p>
-        </footer>
+            <div>
+                <button class="copy" id="copy" onclick="btCopy()">Copiar</button>
+            </div>
+        </section>
+
+
     </main>
+    <footer>
+        <div class="contat">
+            <div class="social-links">
+                <a href="https://wa.me/message/FQYEFCIHZ2A5N1"><img src="./img/whatsapp.svg" alt="logo whatsapp"></a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/reginaldo.soares.5815"><img src="./img/facebook.svg"
+                        alt="logo face"></a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/RegexSC"><img src="./img/github.svg" alt="logo github"></a>
+            </div>
+        </div>
+        <p>&copy 2024 Challenge ONE Decodificador</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 

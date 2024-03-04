@@ -1,3 +1,9 @@
+:root{
+  --fisrtColor: #0A3871;
+  --secondColor: #f3f5fc;
+  --thirdColor: #13c1f6;
+}
+
 *{
     margin:0;
     padding:0;
@@ -5,145 +11,160 @@
 }
 
 body{
-  width: 200vh;
-  margin:auto;
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-}
-
-main{
-  background-color: #F3F5FC;
-  width: 90%;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  color: #0A3871;
+  color: var(--fisrtColor);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--secondColor);
+  width: 200vh;
+  margin:auto;
+  margin-top: 1em;
 }
-
 
 header{  
-  background-color: rgb(127, 255, 249);
+  background-color: var(--thirdColor);
+  color: var(--secondColor);
   display: flex;
+  font-size: larger;
+  font-weight: 600;
   justify-content:space-between;
   align-items: center;
-  padding: 10px;
 }
-.title{
+
+main{
+  background-color: var(--secondColor);
   display: flex;
   justify-content: space-between;
-}
-.contat{
-  display:flex;
+  width: 100%;
 }
 
 .social-links{
   box-sizing: border-box;
   cursor: pointer;
-  margin: 12px;
-  width: 30px;
+  margin: .5em;
+  width: 2em;
   display: flex;
 }
+
 .socia-links, img{
+  color:var(--thirdColor);
   width: 85%;
-  margin-left: 2.5px;
+  margin-left: 1em;
   text-align: center;
   display: flex;
 }
 
-.container{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-h2{
-  margin: 15px 0;
-}
-
-p{
-  margin-top: 10px;
-}
-
 .conteiner-encrypt-text{
-  width: 55%;
+  width: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 12px;
+  margin: 0 1em;
 }
 
 .encrypt-text{
+  background-color: transparent;
   display: flex;
+  font-size: large;
   flex-direction: column;
   justify-content: center;
   border-style: none;
   box-shadow: none;
   outline: none;
   width: 100%;
+  padding: 1em 0;
+  color: var(--fisrtColor);
+}
+
+.encrypt-text::placeholder{
+  color:var(--thirdColor);
+  font-size: x-large;
 }
 
 .buttons{
   display:flex;
-  gap:10px;
   display: flex;
+  justify-content: space-around;
   margin-top: 40px; 
 }
+
+button:hover{
+  color: var(--secondColor);
+  background-color: var(--thirdColor);
+  transition: 5ms;
+  border-style: none;
+}
+
 .encrypt, .decrypt{
+  background-color: transparent;
   display:flex;
   align-items:center;
   justify-content: center;
-  border-color: #0A3871;
+  border: solid 2px var(--fisrtColor);
   font-size: large;
   font-weight: 600;
-  width: 300px;
+  width: 260px;
   height: 60px; 
-  border-radius: 140px; 
-  color: #0A3871;
+  border-radius: 25px; 
+  color: var(--fisrtColor);
 }
+
 .conteiner-decrypt-text{
-  background-image: url('../img/Capturar2.PNG');
+  background-image: url('../img/1.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 16px;
-  width: 40%;
+  background-size:auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 12px;
-  margin: 50PX;
-  /* opacity: 0.4; */
+  border-radius: 20px;
+  /* min-width: 20em; */
 }
 
 .decrypt-text{
   background-color: transparent;
-  color: #0A3871;
+  color: var(--fisrtColor);
   display: flex;
   flex-direction: column;
-  border-style: none;
+  border-style: none; 
   box-shadow: none;
-  padding: 10px;
-  width: 100%;
+  margin: 10px;
+  padding:0.5em;
+  width: 33em;
+  height: 30em;
   outline: none;
 }
 
 .copy{
+  background-color: transparent;
   display:flex;
   align-items:center;
-  border-radius: 140px;
+  border-radius: 25px;
   border-color: #0A3871;
   justify-content: space-around;
   font-size: large;
   font-weight: 600;
   width: 250px;
-  height: 55px;
-  margin-top: 50px;
-  color: #0A3871;
+  height: 60px;
+  margin: 50px 0 10px 0;
+  color: var(--fisrtColor);
+  border: var(--fisrtColor) solid 2px;
 }
+
+.contat{
+  display:flex;
+}
+
 footer{
   display: flex;
   justify-content: center; 
-  padding: .5%; 
+  flex-direction: column;
+  align-items: center;
+  padding: 1%; 
+  color: var(--fisrtColor);
 }
