@@ -130,13 +130,12 @@ button:hover{
   background-color: transparent;
   color: var(--fisrtColor);
   display: flex;
+  justify-content: right;
   flex-direction: column;
   border-style: none; 
   box-shadow: none;
   margin: 10px;
   padding:0.5em;
-  width: 33em;
-  height: 30em;
   outline: none;
 }
 

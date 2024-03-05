@@ -1,6 +1,6 @@
 let encrypt = document.querySelector(".encrypt-text");
 let decrypt = document.querySelector(".decrypt-text");
-const matrizletters =[["e","enter"], ["i", "imes"],["a","ai"], ["u","uat"],["b","axei"], ["c","top"], ];
+const matrizletters =[["e","enter"], ["i", "imes"],["a","ai"], ["u","uat"],["o","ober"], ["c","top"], ];
 
 function btEncryptext(){
  let encryption = encryptext(encrypt.value);
