@@ -39,3 +39,10 @@ function decryptext(decryptedText){
     return decryptedText;
 }
 
+const textarea = document.getElementById('decrypt-text');
+const copyButton = document.getElementById('copy');
+
+copyButton.addEventListener('click', ()=> {
+  textarea.select();
+  document.execCommand('copy',true,decrypt.value);
+});
